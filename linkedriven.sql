@@ -47,4 +47,4 @@ JOIN roles ON jobs."roleId" = roles.id
 JOIN educations ON applicants."userId" = educations."userId"
 JOIN courses ON educations."courseId" = courses.id
 JOIN schools ON educations."schoolId" = schools.id
-WHERE roles.name = 'Software Engineer' AND jobs.active IS true;
+WHERE roles.name = 'Software Engineer' AND jobs.active IS true AND companies.id = 10;
